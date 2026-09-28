@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary: #2563Eb;
+    --success: #16A34A;
+    --danger: #DC2626;
+    --bg: #D8EAFE;
+    --white: #FFFF;
+
+}
+
+body{
+    background: var(--bg);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+}
+.container
+{
+    width: 400px;
+
+    background: var(--white);
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0,0,10px,gray;
+}
+
+h1{
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: var(--primary);
+}
+
+
+label{
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    max-width: bold;
+}
+
+
+input{
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+
+    font-size: 1rem;
+
+
+}
+
+
+input::placeholder{
+    color: gray;
+}
+
+
+
+input:focus{
+        outline: none;
+
+        border-radius: 2px solid var(--primary);
+}
+
+input:read-only{
+    background: #eeeeee;
+
+    cursor: not-allowed;
+}
+
+input:required{
+    border-left: 4px solid rgb(21, 3 ,17 );
+}
+
+
+input:invalid{
+    border-color: red;
+}
+
+input[type="number"]:in-range{
+    background-color: #d8ffd8;
+}
+
+input[type="number"]:out-of-range{
+    background-color: #d89e9e;
+}
+
+.terms{
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.terms input{
+    width: auto;
+}
+
+
+#check:checked{
+    accent-color: green;
+}
+
+#check:checked + label{
+    color: #16A34A;
+}
+
+
+button{
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--primary);
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--success);
+}
